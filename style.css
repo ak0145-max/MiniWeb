@@ -1,0 +1,121 @@
+/* style.css - Mohammed Akif (C241091) */
+/* Image Gallery Project - 6 Beautiful Places of Chattogram Division */
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f1f5f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #0f766e, #134e4a);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.header-content h1 {
+    font-size: 3.2rem;
+    margin-bottom: 12px;
+}
+
+.header-content p {
+    font-size: 1.3rem;
+    opacity: 0.95;
+}
+
+.student-info {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Gallery Section */
+.gallery-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #0f766e;
+    margin-bottom: 50px;
+}
+
+/* Grid Layout for 6 images */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    transition: all 0.4s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);   /* Zoom effect on hover as required */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+/* Image Information */
+.info {
+    padding: 20px;
+}
+
+.info h3 {
+    color: #0f766e;
+    margin-bottom: 10px;
+    font-size: 1.35rem;
+}
+
+.info p {
+    color: #475569;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #1e2937;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    header {
+        padding: 60px 15px;
+    }
+}
